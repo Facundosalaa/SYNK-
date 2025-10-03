@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Comprar – Synk</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;600;800&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <!-- HEADER -->
+  <header class="site-header">
+    <div class="header-inner">
+      <a class="brand" href="index.html">Synk<span>🔗</span></a>
+      <nav class="nav">
+        <a href="index.html">Inicio</a>
+        <a href="listado_tabla.html">Catálogo (Tabla)</a>
+        <a href="listado_box.html">Catálogo (Box)</a>
+        <a href="comprar.html" aria-current="page" class="btn-accent">Comprar</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- FORMULARIO DE COMPRA -->
+<main class="compra">
+  <h1>🛒 Formulario de Compra</h1>
+
+<form action="#mensaje" method="get" class="formulario-compra">
+
+
+    <!-- Datos del cliente -->
+    <fieldset>
+      <legend>Datos del Cliente</legend>
+      <div class="grid-2">
+        <label>Nombre completo
+          <input type="text" name="nombre" required>
+        </label>
+        <label>E-mail
+          <input type="email" name="email" required>
+        </label>
+        <label>Teléfono
+          <input type="tel" name="telefono" required>
+        </label>
+        <label>Dirección
+          <input type="text" name="direccion" required>
+        </label>
+      </div>
+    </fieldset>
+
+    <!-- Medio de pago -->
+    <fieldset>
+      <legend>Método de pago</legend>
+      <select name="pago" required>
+        <option value="">Seleccione...</option>
+        <option value="tarjeta">Tarjeta de crédito/débito</option>
+        <option value="transferencia">Transferencia bancaria</option>
+        <option value="efectivo">Efectivo</option>
+      </select>
+    </fieldset>
+
+    <!-- Productos -->
+    <fieldset>
+      <legend>Seleccione productos</legend>
+      <div class="productos-check">
+        <label><input type="checkbox" name="productos[]" value="iPhone 15 Pro"> iPhone 15 Pro</label>
+        <label><input type="checkbox" name="productos[]" value="Auriculares Logitech G733"> Auriculares Logitech G733</label>
+        <label><input type="checkbox" name="productos[]" value="Notebook Acer Aspire Vero"> Notebook Acer Aspire Vero</label>
+        <label><input type="checkbox" name="productos[]" value="Monitor ViewSonic 27"> Monitor ViewSonic 27"</label>
+        <label><input type="checkbox" name="productos[]" value="Teclado HyperX Alloy FPS"> Teclado HyperX Alloy FPS</label>
+        <label><input type="checkbox" name="productos[]" value="Mouse Glorious Model O RGB"> Mouse Glorious Model O RGB</label>
+      </div>
+    </fieldset>
+
+    <!-- Acciones -->
+    <div class="form-actions">
+      <button type="reset" class="btn">Limpiar</button>
+      <button type="submit" class="btn-accent">Confirmar compra</button>
+        <div id="mensaje" class="modal">
+  <div class="modal-contenido">
+    <h2>✅ ¡Gracias por tu compra!</h2>
+    <p>Tu pedido está siendo procesado. Te enviaremos la confirmación al correo indicado.</p>
+    <a href="#" class="btn-accent">Cerrar</a>
+  </div>
+    </div>
+  </form>
+</main>
+
+
+  <!-- FOOTER -->
+  <footer class="site-footer">
+    <div class="footer-container">
+      <div class="footer-col">
+        <h3>Synk Tech</h3>
+        <p>Innovación y estilo en cada producto.</p>
+      </div>
+
+      <div class="footer-col">
+        <h4>Enlaces</h4>
+        <ul>
+          <li><a href="index.html">Inicio</a></li>
+          <li><a href="listado_box.html">Catálogo</a></li>
+          <li><a href="comprar.html">Comprar</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h4>Contacto</h4>
+        <p>Email: contacto@synk.com</p>
+        <p>Tel: +54 11 5555-5555</p>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <p>© 2025 Synk Electrónica — Todos los derechos reservados.</p>
+    </div>
+  </footer>
+
+</body>
+</html>
